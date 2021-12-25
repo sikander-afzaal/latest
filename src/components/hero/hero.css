@@ -294,7 +294,7 @@ header {
 @media screen and (max-width: 568px) {
   .id-p {
     overflow-x: hidden;
-    padding-left: 0px;
+    padding-left: 15px;
   }
 }
 @media screen and (max-width: 475px) {
@@ -309,7 +309,6 @@ header {
   .id-p {
     font-size: 13px;
     overflow-x: hidden;
-    padding-left: 0px;
   }
   .social-div {
     justify-content: center;
