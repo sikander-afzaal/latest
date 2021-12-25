@@ -291,6 +291,12 @@ header {
     font-size: 22px;
   }
 }
+@media screen and (max-width: 568px) {
+  .id-p {
+    overflow-x: hidden;
+    padding-left: 0px;
+  }
+}
 @media screen and (max-width: 475px) {
   .bottom_left h1 {
     font-size: 42px;
