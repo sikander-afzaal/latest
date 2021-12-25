@@ -313,6 +313,9 @@ header {
   .social-div {
     justify-content: center;
   }
+  .logo {
+    width: 55%;
+  }
 }
 @media screen and (max-width: 390px) {
   .bottom_left h1 {
@@ -347,7 +350,7 @@ header {
     flex-direction: column;
     height: 102vh;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     left: -1002px;
     top: 0px;
     width: 300px;
@@ -384,10 +387,12 @@ header {
     top: 6%;
     font-size: 24px;
     color: white;
+    cursor: pointer;
   }
   .fa-bars {
     font-size: 24px;
     color: white;
+    cursor: pointer;
   }
   .mid {
     margin-bottom: 2rem;
