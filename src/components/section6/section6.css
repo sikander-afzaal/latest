@@ -1,0 +1,105 @@
+.section6 {
+  background-color: var(--gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding-top: 5rem;
+  gap: 50px;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+}
+.section6 h2 {
+  font-family: Montserrat, sans-serif !important;
+  font-size: 35px;
+  font-weight: 700;
+}
+.section6_mid,
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  flex-direction: column;
+  gap: 30px;
+}
+.section6_left span,
+.section6_right span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section6_left span p,
+.section6_right span p {
+  font-size: 70px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif !important;
+}
+.section6_left span img,
+.section6_right span img {
+  width: 50%;
+  object-fit: contain;
+}
+.section6_desc {
+  font-family: Montserrat, sans-serif !important;
+  font-size: 30px;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+}
+.watch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 28px 17px;
+  width: 266px;
+  height: 72px;
+  font-size: 25px;
+  color: white;
+  background-color: transparent;
+  border: 4px solid rgb(255, 227, 89);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  font-weight: 700;
+}
+.watch:hover {
+  background-color: rgb(255, 227, 89);
+}
+.documents-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 2rem;
+}
+.document_btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.docu-btn {
+  justify-content: space-between;
+  height: 80px;
+}
+.docu-h1 {
+  font-family: Montserrat, sans-serif !important;
+  font-size: 35px;
+  font-weight: 700;
+}
+@media screen and (max-width: 942px) {
+  .document_btn-div {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 668px) {
+  .section6_mid {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
