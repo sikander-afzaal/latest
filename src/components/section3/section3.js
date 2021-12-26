@@ -33,7 +33,7 @@ function Section3() {
         <div className="box">
           <img src={img2} alt="..." />
           <h3>Auto-reflections</h3>
-          <p>
+          <p style={{ paddingBottom: "10px" }}>
             5% fee of each transaction is redistributed to token holders. That
             means you can earn more Baby Doge Coins by just holding them in your
             wallet. (centralized exchanges/wallets may not apply tokenomics)

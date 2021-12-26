@@ -156,24 +156,36 @@ function Section9() {
         </div>
       </div>
       <div className="mobile-box">
-        <div className="line">
-          <div onClick={openHandler} className="title">
-            <p>Phase 1</p>
-            <i className="fas fa-plus"></i>
-          </div>
-          <div className="menu">
-            <p className="menu-first">Phase 1 - Birth</p>
-            {data[0].content.map((type, index) => {
-              return (
-                <span key={index} className="pointer">
-                  <i className="fas fa-check"></i>
-                  <p className="phase_desc">{type}</p>
-                </span>
-              );
-            })}
-          </div>
+        <div className="content_acc">
+          {data.map((elem, index) => {
+            return (
+              <div key={index} className="phase_acc">
+                <input
+                  type="checkbox"
+                  id={`phase${index}`}
+                  name="q"
+                  className="questions_acc"
+                />
+                <i className="fas fa-plus plus_acc"></i>
+                <label htmlFor={`phase${index}`} className="question_acc">
+                  {`Phase ${index + 1}`}
+                </label>
+                <div className="answers_acc">
+                  <p className="menu-first">{elem.phase}</p>
+                  {elem.content.map((elem_data, index) => {
+                    return (
+                      <span key={index} className="pointer">
+                        <i className="fas fa-check"></i>
+                        <p className="phase_desc">{elem_data}</p>
+                      </span>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
-        <div className="line">
+        {/* <div className="line">
           <div onClick={openHandler} className="title">
             <p>Phase 2</p>
             <i className="fas fa-plus"></i>
@@ -239,8 +251,7 @@ function Section9() {
                 </span>
               );
             })}
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );

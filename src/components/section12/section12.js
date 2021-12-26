@@ -21,19 +21,19 @@ function Section12() {
           <i className="fab fa-telegram-plane"></i>
         </a>
         <a href="#">
-          <i className="fab fa-reddit-square"></i>
-        </a>
-        <a href="#">
           <i className="fab fa-twitter-square"></i>
         </a>
         <a href="#">
-          <i className="fab fa-discord"></i>
+          <i className="fab fa-facebook-square"></i>
         </a>
         <a href="#">
           <i className="fab fa-instagram"></i>
         </a>
         <a href="#">
-          <i className="fab fa-facebook-square"></i>
+          <i className="fab fa-discord"></i>
+        </a>
+        <a href="#">
+          <i className="fab fa-reddit-square"></i>
         </a>
       </div>
     </div>

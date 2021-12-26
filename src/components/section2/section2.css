@@ -55,7 +55,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
 }
 .section2_image {
   filter: grayscale(1);

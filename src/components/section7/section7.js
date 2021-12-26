@@ -1,7 +1,14 @@
 import React from "react";
 import "./section7.css";
+// swiper library
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import img1 from "./img1.jpg";
 function Section7() {
+  SwiperCore.use([Autoplay, Navigation, Pagination]);
+  let navigationPrevRef = React.useRef(null);
+  let navigationNextRef = React.useRef(null);
   return (
     <div className="section7">
       <h1>Interesting Articles</h1>

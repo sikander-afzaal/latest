@@ -15,14 +15,29 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90vw;
-  flex-wrap: wrap;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .section13_img img {
   filter: grayscale(1);
   transition: all 0.25s ease-in-out;
   cursor: pointer;
+  margin-right: 3rem;
 }
 .section13_img img:hover {
   filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .section13_img img {
+    animation: marquee 10s ease-in 1s infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-1000px);
+    }
+  }
 }
