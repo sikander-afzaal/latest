@@ -1,0 +1,75 @@
+.section12 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0596/6109/0985/files/social_bg_img_1920x500_7a8a8654-0e9f-4c74-8e83-7d08bcd5c512.png?v=1630425370");
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.invisible {
+  color: rgba(0, 0, 0, 0.02);
+  font-family: Montserrat, sans-serif !important;
+  font-size: 60px;
+}
+.join {
+  font-family: Montserrat, sans-serif !important;
+  color: #727272;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.join span {
+  color: var(--gold);
+  font-weight: 700;
+  font-family: Montserrat, sans-serif !important;
+}
+.follower_small {
+  font-size: 15px;
+  color: #727272;
+  margin-bottom: 0.5rem;
+}
+.section12_desc {
+  color: #727272;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+.soon {
+  color: var(--gold);
+  font-size: 16px;
+  font-family: Montserrat, sans-serif !important;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.section12_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.section12_social a {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 0 30px rgb(0 0 0 / 15%);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.section12_social a i {
+  font-size: 40px;
+}
+.section12_social a:hover {
+  border-color: var(--gold);
+  background-color: transparent;
+}
+@media screen and (max-width: 702px) {
+  .section12_desc {
+    width: 80%;
+  }
+}

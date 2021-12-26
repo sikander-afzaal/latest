@@ -111,6 +111,14 @@ header {
   padding: 10px 10px;
   font-size: 20px;
 }
+.id-p input {
+  background: none;
+  border: none;
+  width: 25rem;
+  font-size: 15px;
+  color: black;
+  padding-left: 10px;
+}
 .id-p span {
   display: flex;
   padding: 4px 13px;
@@ -296,6 +304,9 @@ header {
     overflow-x: hidden;
     padding-left: 15px;
   }
+  .id-p input {
+    font-size: 13px !important;
+  }
 }
 @media screen and (max-width: 475px) {
   .bottom_left h1 {
@@ -315,6 +326,9 @@ header {
   }
   .logo {
     width: 55%;
+  }
+  .id-p input {
+    font-size: 12px !important;
   }
 }
 @media screen and (max-width: 390px) {

@@ -10,6 +10,9 @@ import Section8 from "./components/section8/section8.js";
 import Section9 from "./components/section9/section9.js";
 import Section10 from "./components/section10/section10.js";
 import Section11 from "./components/section11/section11.js";
+import Section12 from "./components/section12/section12.js";
+import Section13 from "./components/section13/section13.js";
+import Footer from "./components/footer/footer.js";
 function App() {
   return (
     <div className="App">
@@ -24,6 +27,9 @@ function App() {
       <Section9 />
       <Section10 />
       <Section11 />
+      <Section12 />
+      <Section13 />
+      <Footer />
     </div>
   );
 }

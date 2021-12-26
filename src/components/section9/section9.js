@@ -68,17 +68,33 @@ function Section9() {
     e.target.classList.add("active");
     setPhase(parseInt(phaseNumber));
   };
-  const helloHandler = (e) => {
+  const openHandler = (e) => {
     const menu = e.target.nextSibling;
-
-    if (document.querySelector(".active-menu") != null) {
+    if (open === false) {
+      menu.classList.add("active-menu");
+      e.target.lastChild.classList.remove("fa-plus");
+      e.target.lastChild.classList.add("fa-minus");
+      setOpen((prev) => {
+        return !prev;
+      });
+    } else if (open === true) {
       document.querySelector(".active-menu").classList.remove("active-menu");
-      menu.classList.add("active-menu");
-    } else if (menu.classList.contains("acitve-menu")) {
-      menu.classList.remove("active-menu");
-    } else {
-      menu.classList.add("active-menu");
+      e.target.lastChild.classList.add("fa-plus");
+      e.target.lastChild.classList.remove("fa-minus");
+      setOpen((prev) => {
+        return !prev;
+      });
     }
+    // const menu = e.target.nextSibling;
+
+    // if (document.querySelector(".active-menu") != null) {
+    //   document.querySelector(".active-menu").classList.remove("active-menu");
+    //   menu.classList.add("active-menu");
+    // } else if (menu.classList.contains("acitve-menu")) {
+    //   menu.classList.remove("active-menu");
+    // } else {
+    //   menu.classList.add("active-menu");
+    // }
   };
   return (
     <div className="section9">
@@ -141,11 +157,12 @@ function Section9() {
       </div>
       <div className="mobile-box">
         <div className="line">
-          <div onClick={helloHandler} className="title">
+          <div onClick={openHandler} className="title">
             <p>Phase 1</p>
             <i className="fas fa-plus"></i>
           </div>
           <div className="menu">
+            <p className="menu-first">Phase 1 - Birth</p>
             {data[0].content.map((type, index) => {
               return (
                 <span key={index} className="pointer">
@@ -157,11 +174,12 @@ function Section9() {
           </div>
         </div>
         <div className="line">
-          <div onClick={helloHandler} className="title">
+          <div onClick={openHandler} className="title">
             <p>Phase 2</p>
             <i className="fas fa-plus"></i>
           </div>
           <div className="menu">
+            <p className="menu-first">Phase 2 - Crawl</p>
             {data[1].content.map((type, index) => {
               return (
                 <span key={index} className="pointer">
@@ -173,11 +191,12 @@ function Section9() {
           </div>
         </div>
         <div className="line">
-          <div onClick={helloHandler} className="title">
+          <div onClick={openHandler} className="title">
             <p>Phase 3</p>
             <i className="fas fa-plus"></i>
           </div>
           <div className="menu">
+            <p className="menu-first">Phase 3 - Walk</p>
             {data[2].content.map((type, index) => {
               return (
                 <span key={index} className="pointer">
@@ -189,11 +208,12 @@ function Section9() {
           </div>
         </div>
         <div className="line">
-          <div onClick={helloHandler} className="title">
+          <div onClick={openHandler} className="title">
             <p>Phase 4</p>
             <i className="fas fa-plus"></i>
           </div>
           <div className="menu">
+            <p className="menu-first">Phase 4 - Run</p>
             {data[3].content.map((type, index) => {
               return (
                 <span key={index} className="pointer">
@@ -205,11 +225,12 @@ function Section9() {
           </div>
         </div>
         <div className="line">
-          <div onClick={helloHandler} className="title">
+          <div onClick={openHandler} className="title">
             <p>Phase 5</p>
             <i className="fas fa-plus"></i>
           </div>
           <div className="menu">
+            <p className="menu-first">Phase 5 - Jump</p>
             {data[4].content.map((type, index) => {
               return (
                 <span key={index} className="pointer">

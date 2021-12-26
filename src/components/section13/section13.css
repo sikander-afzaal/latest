@@ -1,0 +1,28 @@
+.section13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 2rem;
+  padding: 2rem 0rem;
+}
+.section13 h2 {
+  color: #c2c2c2;
+  font-size: 18px;
+}
+.section13_img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  flex-wrap: wrap;
+}
+.section13_img img {
+  filter: grayscale(1);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.section13_img img:hover {
+  filter: grayscale(0);
+}

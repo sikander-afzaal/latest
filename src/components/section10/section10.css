@@ -65,9 +65,15 @@
   .section10-title {
     width: 80vw;
   }
+  .section10-menu {
+    width: 80vw;
+  }
 }
 @media screen and (max-width: 434px) {
   .section10-title {
+    width: 90vw;
+  }
+  .section10-menu {
     width: 90vw;
   }
 }

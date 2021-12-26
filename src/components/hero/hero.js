@@ -70,9 +70,13 @@ function Hero() {
             <p className="id-p">
               <span>
                 <img src={bsc} />
-                BSC
+                ETH
               </span>
-              0xc748673057861a797275cd8a068abb95a902e8de
+              <input
+                disabled=""
+                type="text"
+                placeholder="0xc748673057861a797275cd8a068abb95a902e8de"
+              />
             </p>
             <button className="id-btn">Copy Address</button>
           </div>
