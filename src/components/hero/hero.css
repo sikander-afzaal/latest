@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 :root {
-  --gold: #f4d35e;
+  --gold: rgba(244, 211, 94, 1);
   --black: #0d1821;
 }
 .hero {
