@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+//css
 import "./hero.css";
 import logo from "./logo.png";
 import bsc from "./bsc.png";
@@ -8,6 +9,7 @@ function Hero() {
     <section className="hero">
       <header>
         <img className="logo" src={logo} alt="..." />
+        {/* navbar start ------------------------ */}
         <ul className="nav">
           <li
             onClick={() => {
@@ -22,29 +24,31 @@ function Hero() {
             <img className="logo mid nav-mobile" src={logo} alt="..." />
           </li>
           <li className="nav-item first">
-            <a href="#">Card</a>
+            <a href="..">Card</a>
           </li>
           <li className="nav-item">
-            <a href="#">Tokenomics</a>
+            <a href="..">Tokenomics</a>
           </li>
           <li className="nav-item">
-            <a href="#">Charity</a>
+            <a href="..">Charity</a>
           </li>
           <li className="nav-item">
-            <a href="#">Documents</a>
+            <a href="..">Documents</a>
           </li>
           <li className="nav-item">
-            <a href="#">Roadmap</a>
+            <a href="..">Roadmap</a>
           </li>
           <li className="nav-item">
-            <a href="#">Contact</a>
+            <a href="..">Contact</a>
           </li>
         </ul>
-        <a className="buy-btn" href="#">
+        {/* navbar end ------------------------ */}
+        <a className="buy-btn" href="..">
           BUY ON UNISWAP
         </a>
         <i
           onClick={() => {
+            // to make the body stop scrolling when menu is opened --------------
             document.querySelector(".nav").classList.add("open");
             document.querySelector("BODY").classList.add("overflow");
           }}
@@ -69,7 +73,7 @@ function Hero() {
           <div className="id">
             <p className="id-p">
               <span>
-                <img src={bsc} />
+                <img src={bsc} alt=".." />
                 ETH
               </span>
               <input
@@ -80,28 +84,31 @@ function Hero() {
             </p>
             <button className="id-btn">Copy Address</button>
           </div>
+
+          {/* social media button ------------------------ */}
+
           <div className="social-div">
-            <a href="#">
+            <a href="..">
               <i className="fab fa-telegram-plane"></i>
               Telegram
             </a>
-            <a href="#">
+            <a href="..">
               <i className="fab fa-reddit-square"></i>
               Reddit
             </a>
-            <a href="#">
+            <a href="..">
               <i className="fab fa-twitter-square"></i>
               Twitter
             </a>
-            <a href="#">
+            <a href="..">
               <i className="fab fa-discord"></i>
               Discord
             </a>
-            <a href="#">
+            <a href="..">
               <i className="fab fa-instagram"></i>
               Instagram
             </a>
-            <a href="#">
+            <a href="..">
               <i className="fab fa-facebook-square"></i>
               Facebook
             </a>
